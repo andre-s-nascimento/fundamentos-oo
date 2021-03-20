@@ -2,11 +2,10 @@ package one.digitalinnovation.digionebank
 
 class Pessoa {
     var nome: String = "André"
-    var cpf: String = "123.456.789-10"
 
-    inner class Endereco {
-        var rua: String = "Rua A, 1"
-    }
+    var cpf: String = "123.456.789-10"
+    private set
+
 }
 
 fun main() {
@@ -15,5 +14,5 @@ fun main() {
     println(andre.nome)
     println(andre.cpf)
 
-    println(andre.Endereco().rua)
+
 }
